@@ -22,5 +22,11 @@ model user {
   lastName  String?
 }
 
-// model Bookmark {
-// }
+model Bookmark {
+  id         Int      @id @default(autoincrement())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @default(now())
+  title      String
+  descriptio String?
+  link       String
+}
